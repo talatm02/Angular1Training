@@ -1,0 +1,16 @@
+<html ng-app="app1">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    </head>
+    <body>
+        <div ng-controller="MainController1">
+            <a href="" ng-click="keyValue = 'one'">One</a>
+            <a href="" ng-click="keyValue = 'two'">Two</a>
+            <p></p>
+            {{myObject[keyValue]}}
+        </div>
+
+        <script src="./js/app.1.js"></script>
+        <script src="./js/maincontroller1.js"></script>
+    </body>
+</html>

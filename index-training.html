@@ -1,0 +1,28 @@
+<html ng-app="app-training">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    </head>
+    <body>
+
+        <div ng-controller="TrainingController">
+            <h2>New PAtient</h2>
+            <div>
+                Name: <input type="text" ng-model="newName">
+                <br>
+                Age: <input type="text" ng-model="newAge">
+
+                <input type="button" value="Save" ng-click="save()">
+            </div>
+
+            <ul>
+                <li ng-repeat="patient in patients" >
+                    <a href="" ng-click="selectPatient(patient)">
+                    <p >{{patient.name}} / {{patient.age}}</p></a>
+                    <!-- <input type="text" ng-focus="Onfocus(patient.name)" ng-blur="onBlur(patient.age)" ng-model="patient.age"> -->
+                </li>
+            </ul>
+        </div>
+        <script src="./js/app-training.js"></script>
+        <script src="./js/trainingcontroller.js"></script>
+    </body>
+</html>
